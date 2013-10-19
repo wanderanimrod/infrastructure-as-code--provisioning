@@ -1,4 +1,4 @@
-infrastructure-as-code--geek-night-kampala
+infrastructure-as-code--provisioning
 ==========================================
 
 Infrastructure as Code talk (GeekNight Kampala)
