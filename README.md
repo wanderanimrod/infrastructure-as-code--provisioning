@@ -1,4 +1,6 @@
 infrastructure-as-code--provisioning
 ==========================================
 
-Infrastructure as Code talk (GeekNight Kampala)
+This is the provisioning code repository for the Infrastructure as Code talk, GeekNight Kampala
+
+
