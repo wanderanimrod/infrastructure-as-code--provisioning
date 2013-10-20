@@ -17,4 +17,6 @@ echo -e "\n\nConfiguring chef-solo paths ..."
 mkdir -p /etc/chef
 touch /etc/chef/solo.rb
 echo "cookbook_path    \"/home/provisioning/chef/cookbooks\"" >> /etc/chef/solo.rb
+echo "role_path    \"/home/provisioning/chef/roles\"" >> /etc/chef/solo.rb
 
+echo -e "\n\nProvisioning machine ..."
