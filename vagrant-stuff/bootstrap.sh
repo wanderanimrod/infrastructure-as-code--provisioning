@@ -22,3 +22,4 @@ echo "cookbook_path    \"/home/provisioning/chef/cookbooks\"" >> /etc/chef/solo.
 echo "role_path    \"/home/provisioning/chef/roles\"" >> /etc/chef/solo.rb
 
 echo -e "\n\nProvisioning machine ..."
+chef-solo -o role[all_in_one]
