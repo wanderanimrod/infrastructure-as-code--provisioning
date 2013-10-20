@@ -13,13 +13,7 @@ execute "virtualenv" do
 	command "pip install virtualenv"
 end
 
-directory "/home/simple-list-view/virtualenv" do
-	owner "app_user"
-	group "app_user"
-	action :create
-end 
-
 execute "create_virtualenv" do
-	cwd "/home/simple-list-view/virtualenv"
-	command "virtualenv --no-site-packages ."
+	cwd "/home/simple-list-view"
+	command "virtualenv --no-site-packages virtualenv"
 end
