@@ -1,10 +1,10 @@
-# CHANGELOG for postgres
+# CHANGELOG for sqlite3
 
-This file is used to list changes made in each version of postgres.
+This file is used to list changes made in each version of sqlite3.
 
 ## 0.1.0:
 
-* Initial release of postgres
+* Initial release of sqlite3
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
