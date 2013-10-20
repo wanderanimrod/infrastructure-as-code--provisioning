@@ -7,7 +7,7 @@
     "recipe[create_app_user]",
     "recipe[python_dev]",
     "recipe[install_simple_list_view]",
-    "recipe[postgres]",
+    "recipe[sqlite3]",
     "recipe[db_schema_init]",
     "recipe[nginx]",
     "recipe[uwsgi]"
