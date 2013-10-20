@@ -21,5 +21,8 @@ touch /etc/chef/solo.rb
 echo "cookbook_path    \"/home/provisioning/chef/cookbooks\"" >> /etc/chef/solo.rb
 echo "role_path    \"/home/provisioning/chef/roles\"" >> /etc/chef/solo.rb
 
+echo -e "\n\nInstalling postgres without confuguration. Does not install within the chef run due to a bug"
+apt-get install postgresql-9.1 -y
+
 echo -e "\n\nProvisioning machine ..."
 chef-solo -o role[all_in_one]
