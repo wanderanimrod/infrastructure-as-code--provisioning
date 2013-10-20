@@ -13,6 +13,11 @@ execute "virtualenv" do
 	command "pip install virtualenv"
 end
 
+directory "/home/simple-list-view/virtualenv" do
+	recursive true
+	action :delete
+end
+
 execute "create_virtualenv" do
 	cwd "/home/simple-list-view"
 	command "virtualenv --no-site-packages virtualenv"
