@@ -6,7 +6,7 @@ directory "/home/simple-list-view/app" do
 end
 
 git "/home/simple-list-view/app" do
-	user "app_user"
+	user "root"
 	repository "https://github.com/wanderanimrod/infrastructure-as-code--simple-list-view.git"
 	reference "master"
         revision  "HEAD"
