@@ -13,7 +13,7 @@ git "/home/simple-list-view/app" do
 	action :sync
 end
 
-template "/home/simple-list-view/app/simple-list-view/simple-list-view/settings.py" do
+template "/home/simple-list-view/app/simple_list_view/simple_list_view/settings.py" do
 	source "settings.py.erb"
 end
 
