@@ -19,6 +19,6 @@ server {
     # Finally, send all non-media requests to the Django server.
     location / {
         uwsgi_pass  django;
-        include     /home/simple-list-view/app/simple_list_view/simple_list_view/uwsgi_params; # the uwsgi_params file you installed
+        include     /home/simple-list-view/app/simple_list_view/uwsgi_params; # the uwsgi_params file you installed
     }
 }
