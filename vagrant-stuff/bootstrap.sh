@@ -3,7 +3,8 @@
 echo -e "\n\n****************** Bootstrapping chef *********************** "
 
 echo -e "\n\nInstalling chef ..."
-#curl -L https://www.opscode.com/chef/install.sh | sudo bash
+apt-get install curl -y
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
 
 #nInstall git so that you can clone the provisioning repository onto the machine"
 echo -e "\n\nInstalling git ..."
