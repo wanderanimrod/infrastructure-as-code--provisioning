@@ -20,8 +20,8 @@ _If you have vagrant already setup, skip this step._
 Learn about what vagrant is and does, and install using the resources on
 [this](http://docs.vagrantup.com/v2/getting-started/index.html) page
 
-#### 2. Download a Vagrant Ubuntu Image 12.04 from 
-[here](http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box)
+#### 2. Download a Vagrant Ubuntu Image 12.04 
+[from here](http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box)
 
 
 ### 3. Install Git
@@ -38,9 +38,9 @@ This will create a directory <code>infrastructure-as-code--provisioning</code>.
 
 #### 5. Get the provisioning started.
 Go into the <code>infrastructure-as-code--provisioning</code> directory created in the step above and get into 
-<code>vagrant-stuff<code> directory. 
+<code>vagrant-stuff</code> directory. 
 
-In there, open the file called <code>Vagrantfile</code>. Edit line <code>14<code> of the file that has 
+In there, open the file called <code>Vagrantfile</code>. Edit line <code>14</code> of the file that has 
 the <code>config.vm.box_url = "/Users/Nimrod/dev-tools/vagrant/raring-server-cloudimg-i386-vagrant-disk1.box"</code>.
 Replace the string in quotes with the path to the vagrant image you downloaded in step <code>2</code> above and
 save the file.
@@ -65,15 +65,20 @@ of things like curl, git, chef, and cloning the provisioning repository.
 If the provisioning runs without any errors, you can now go to your browser to 
 <code>127.0.0.1:8077</code> and see a blank page with the text:
 
-The Simple List View Django app is up an running! In order to be able to enter some list items and see them on
-this screen, please get into your virtual machine and run the following commands.
+<i>The Simple List View Django app is up an running! In order to be able to enter 
+some list items and see them on this screen, please get into your virtual machine and run the following
+commands.</i>
+
 * source /home/simple-list-view/virtualenv/bin/activate
 * cd /home/simple-list-view/app/simple-list-view
 * ./manage.py createsuperuser
 
+<i>
 Enter a username, a dummy but well formed email, and a password. If you did that right, you should be able to 
 use that username and password to login at <code>127.0.0.1:8077/admin</code> in your browser. Enter a few items
 and go back to <code>127.0.0.1:8077</code>. You should then see the items you entered listed on the home page!
+</i>
+
 
 You now have a fully functional Django app, using production ready infrastructure, without you having manually
 setup your virtual server. That is what treating your infrastructure as code gives you. You can now get cracking
