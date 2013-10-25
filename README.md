@@ -58,10 +58,27 @@ You should then be able to run <code>vagrant ssh</code> and see this in your pro
 <code>vagrant@vagrant-ubuntu-raring-32:~$ </code>
 
 #### Start provisioning your virtual machine to host the Simple-list-view application
-Run the command <code>cd /vagrant/</code>. While there (and with a stable internet connection,
+Run the command <code>cd /vagrant/</code>. While there (and with a stable internet connection),
 run <code>./bootstrap</code>. That should dump some output to your console saying it is installing a number
 of things like curl, git, chef, and cloning the provisioning repository.
 
 If the provisioning runs without any errors, you can now go to your browser to 
-<code>127.0.0.1:8077</code> and see a blank page with the text __The Simple List View Django app is up an running.
-Please get into your virtual machine and run the following commands__
+<code>127.0.0.1:8077</code> and see a blank page with the text:
+
+The Simple List View Django app is up an running! In order to be able to enter some list items and see them on
+this screen, please get into your virtual machine and run the following commands.
+* source /home/simple-list-view/virtualenv/bin/activate
+* cd /home/simple-list-view/app/simple-list-view
+* ./manage.py createsuperuser
+
+Enter a username, a dummy but well formed email, and a password. If you did that right, you should be able to 
+use that username and password to login at <code>127.0.0.1:8077/admin</code> in your browser. Enter a few items
+and go back to <code>127.0.0.1:8077</code>. You should then see the items you entered listed on the home page!
+
+You now have a fully functional Django app, using production ready infrastructure, without you having manually
+setup your virtual server. That is what treating your infrastructure as code gives you. You can now get cracking
+on the Django app, the Chef recipes, or both.
+
+
+#### Coming soon...
+A brief write-up on what the recipes in this repo do.
